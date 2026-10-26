@@ -1,0 +1,129 @@
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Título principal */
+.titulo-principal {
+    color: #1e40af;
+    font-weight: bold;
+}
+
+/* Cartões de conteúdo */
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+/* Organização da apresentação com Flexbox */
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Imagem principal */
+.foto-principal {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+/* Texto da apresentação */
+.texto-apresentacao {
+    flex: 1;
+}
+
+.texto-apresentacao p:last-child {
+    margin-bottom: 0;
+}
+
+/* Títulos das seções */
+.titulo-secao {
+    color: #166534;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Lista dos sites com Flexbox */
+.lista-sites {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Área clicável das logos */
+.lista-sites a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 76px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+/* Imagens dos sites */
+.lista-sites img {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Cabeçalho da tabela */
+.table thead th {
+    background-color: #1e40af;
+    color: #ffffff;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .apresentacao {
+        gap: 16px;
+    }
+
+    .foto-principal {
+        width: 160px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 576px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-principal {
+        width: 180px;
+    }
+
+    .texto-apresentacao {
+        width: 100%;
+    }
+
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    .titulo-secao {
+        font-size: 1.25rem;
+    }
+
+    .lista-sites {
+        justify-content: center;
+    }
+}
