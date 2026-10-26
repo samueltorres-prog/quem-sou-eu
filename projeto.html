@@ -1,11 +1,139 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Samuel Torres</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+
+    <!-- Framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Arquivo CSS próprio -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   
+    <main class="container py-4">
+
+        <!-- Cabeçalho -->
+        <header class="text-center mb-4">
+            <h1 class="titulo-principal">Quem sou eu?</h1>
+        </header>
+
+        <!-- Apresentação pessoal -->
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+                <div class="apresentacao">
+
+                    <img
+                        src="imagens/img.jesus.jpg"
+                        alt="Imagem de Jesus"
+                        width="200"
+                        class="foto-principal"
+                    >
+
+                    <div class="texto-apresentacao">
+                        <p>
+                            Olá! Meu nome completo é Samuel Torres Costa.
+                            Sou de Serrinha, no Rio Grande do Norte, e estudo
+                            no curso Técnico em Informática do IFRN – Campus
+                            Nova Cruz.
+                        </p>
+
+                        <p>
+                            No meu tempo livre, gosto de jogar e praticar
+                            atividades físicas, como corrida e futebol.
+                            Essas atividades são formas de aproveitar meu
+                            tempo livre e desenvolver disciplina e persistência.
+                        </p>
+
+                        <p>
+                            Uma curiosidade sobre mim é que busco melhorar
+                            como pessoa a cada dia, tendo Jesus Cristo como
+                            exemplo e inspiração para viver com amor,
+                            humildade e responsabilidade.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista de sites favoritos -->
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="titulo-secao">Sites que gosto de acessar</h2>
+
+                <ul class="lista-sites">
+                    <li>
+                        <a href="https://www.youtube.com"
+                           target="_blank" rel="noopener"
+                           aria-label="Abrir YouTube">
+                            <img src="imagens/img3.png"
+                                 alt="Logo do YouTube">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://chatgpt.com/"
+                           target="_blank" rel="noopener"
+                           aria-label="Abrir ChatGPT">
+                            <img src="imagens/gpt.avif"
+                                 alt="Logo do ChatGPT">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://claude.com/"
+                           target="_blank" rel="noopener"
+                           aria-label="Abrir Claude">
+                            <img src="imagens/claude.webp"
+                                 alt="Logo do Claude">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tabela de gostos e motivos -->
+        <section class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="titulo-secao">O que eu gosto e o porquê</h2>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped align-middle mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col">O que eu gosto</th>
+                                <th scope="col">Motivo</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Futebol</td>
+                                <td>É divertido e ajuda a praticar esportes em equipe.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Corrida</td>
+                                <td>Ajuda a cuidar da saúde e desenvolver a resistência física.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Jogos</td>
+                                <td>São uma forma de entretenimento.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>
